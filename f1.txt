@@ -1,0 +1,7 @@
+/* defn of compiler */
+compiler is a program that converts code
+written in one langugage to another
+// defn of assembler
+assembler converts symbolic code to machine code
+/* end of file */
+
