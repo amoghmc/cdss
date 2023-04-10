@@ -1,6 +1,6 @@
 %{
-    #include <stdio.h>
-    int pi = 0, ni = 0, pf = 0, nf = 0;
+	#include <stdio.h>
+	int pi = 0, ni = 0, pf = 0, nf = 0;
 %}
 
 %%
@@ -11,19 +11,19 @@
 %%
 
 void main(int argc, char* argv[]) {
-    if (argc != 2) {
-        printf("usage: ./a.out in.txt \n");
-        exit(0);
-    }
-    yyin=fopen(argv[1], "r");
-    yylex();
-    printf("Positive ints %d\n", pi);
-    printf("Negative ints %d\n", ni);
-    printf("Positive fractions %d\n", pf);
-    printf("Negative fractions %d\n", nf);
+	if (argc != 2) {
+		printf("usage: ./a.out in.txt \n");
+		exit(0);
+	}
+	yyin=fopen(argv[1], "r");
+	yylex();
+	printf("Positive ints %d\n", pi);
+	printf("Negative ints %d\n", ni);
+	printf("Positive fractions %d\n", pf);
+	printf("Negative fractions %d\n", nf);
 }
 
 int yywrap() {
-    return 1;
+	return 1;
 }
 

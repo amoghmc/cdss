@@ -13,10 +13,10 @@ letter [a-z A-Z_]
 
 int main()
 {
-    printf("Enter the values:\n");
-    yylex();
-    printf("Number of identifiers = %d\n", i);
-    return 0;
+	printf("Enter the values:\n");
+	yylex();
+	printf("Number of identifiers = %d\n", i);
+	return 0;
 }
 
 

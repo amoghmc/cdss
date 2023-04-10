@@ -1,6 +1,6 @@
 %{
-    #include <stdio.h>
-    int valid;
+	#include <stdio.h>
+	int valid;
 %}
 
 %%
@@ -9,14 +9,14 @@
 %%
 
 int main() {
-    printf("Enter the text \n");
-    yylex();
-    if (valid) {
-        printf("\nStatement is compound");
-    }
-    else {
-        printf("\nStatement is simple");
-    }
-    return 0;
+	printf("Enter the text \n");
+	yylex();
+	if (valid) {
+		printf("\nStatement is compound");
+	}
+	else {
+		printf("\nStatement is simple");
+	}
+	return 0;
 }
 
