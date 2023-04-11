@@ -10,8 +10,8 @@ int sl=0;
 %%
 
 int main() {
-	yyin=fopen("f1.txt", "r");
-	yyout=fopen("f2.txt", "w");
+	yyin=fopen("2a_f1.txt", "r");
+	yyout=fopen("2a_f2.txt", "w");
 	yylex();
 	fclose(yyin);
 	fclose(yyout);
