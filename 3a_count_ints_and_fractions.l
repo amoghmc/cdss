@@ -12,7 +12,7 @@
 
 void main(int argc, char* argv[]) {
 	if (argc != 2) {
-		printf("usage: ./a.out in.txt \n");
+		printf("usage: ./a.out 3a_in.txt \n");
 		exit(0);
 	}
 	yyin=fopen(argv[1], "r");
