@@ -1,6 +1,6 @@
 %{
-#include <stdio.h>
-int i = 0;
+	#include <stdio.h>
+	int i = 0;
 %}
 
 digit [0-9]

@@ -1,7 +1,7 @@
 %{
-#include <stdio.h>
-int ml=0;
-int sl=0;
+	#include <stdio.h>
+	int ml=0;
+	int sl=0;
 %}
 
 %%

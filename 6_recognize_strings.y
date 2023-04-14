@@ -17,7 +17,7 @@ int main() {
     }
 }
 
-yyerror() {
+int yyerror() {
     printf("Invalid string\n");
     exit(0);
 }

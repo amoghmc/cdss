@@ -1,4 +1,5 @@
 %{
+    #include <stdio.h>
 %}
 
 %token L D
@@ -15,7 +16,7 @@ int main() {
     yyparse();
 }
 
-yyerror() {
+int yyerror() {
     printf("Invalid variable\n");
     exit(0);
 }
