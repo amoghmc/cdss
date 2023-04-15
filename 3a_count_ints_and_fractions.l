@@ -1,5 +1,6 @@
 %{
 	#include <stdio.h>
+	#include <stdlib.h>
 	int pi = 0, ni = 0, pf = 0, nf = 0;
 %}
 
