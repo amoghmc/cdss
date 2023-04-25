@@ -11,12 +11,8 @@
 [+]?[0-9]*\.[0-9]+ {pf++;}
 %%
 
-void main(int argc, char* argv[]) {
-	if (argc != 2) {
-		printf("usage: ./a.out 3a_in.txt \n");
-		exit(0);
-	}
-	yyin=fopen(argv[1], "r");
+int main() {
+	yyin = fopen("3a_in.txt", "r");
 	yylex();
 	printf("Positive ints %d\n", pi);
 	printf("Negative ints %d\n", ni);
