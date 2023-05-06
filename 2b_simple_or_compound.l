@@ -4,7 +4,7 @@
 %}
 
 %%
-[a-zA-Z]*[ ](and|but|or|however)[ ][a-zA-z]* {valid=1;}
+[a-zA-Z]*[ ](and|but|or|however)[ ][a-zA-z]* {valid = 1;}
 .|[\n];
 %%
 

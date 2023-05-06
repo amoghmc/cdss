@@ -14,6 +14,7 @@
 int main() {
 	yyin = fopen("3a_in.txt", "r");
 	yylex();
+	
 	printf("Positive ints %d\n", pi);
 	printf("Negative ints %d\n", ni);
 	printf("Positive fractions %d\n", pf);
