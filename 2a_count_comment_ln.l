@@ -20,3 +20,7 @@ int main() {
 	printf("Number of single line comments: %d\n", sl);
 	printf("Number of multiline comments: %d\n", ml);
 }
+
+int yywrap() {
+	return 1;
+}

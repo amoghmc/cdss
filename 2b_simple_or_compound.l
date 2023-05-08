@@ -1,17 +1,17 @@
 %{
 	#include <stdio.h>
-	int valid;
+	int compound;
 %}
 
 %%
-[a-zA-Z]*[ ](and|but|or|however)[ ][a-zA-Z]* {valid = 1;}
+[a-zA-Z]*[ ](and|but|or|however)[ ][a-zA-Z]* {compound = 1;}
 .|[\n] {;}
 %%
 
 int main() {
 	printf("Enter the text \n");
 	yylex();
-	if (valid) {
+	if (compound) {
 		printf("\nStatement is compound");
 	}
 	else {
