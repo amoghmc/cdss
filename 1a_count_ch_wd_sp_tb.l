@@ -1,4 +1,5 @@
 %{
+	#include <stdio.h>
 	int ch=0, wd=0, ln=0, sp=0; 
 %}
 
