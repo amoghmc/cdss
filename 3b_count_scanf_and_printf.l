@@ -13,5 +13,8 @@ int main() {
     yyout = fopen("3d_out.c", "w");
     yylex();
     printf("Number of scanf: %d\nNumber of printf: %d\n", sf, pf);
+
+    fclose(yyin);
+    fclose(yyout);
     return 0;
 }

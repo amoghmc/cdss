@@ -3,7 +3,7 @@
 %}
 
 %%
-[a-z] return L;
-[0-9] return D;
+[a-z] {return L;}
+[0-9] {return D;}
 %%
 

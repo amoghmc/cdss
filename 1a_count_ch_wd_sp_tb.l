@@ -10,8 +10,7 @@
 %%
 
 // end of input processing 
-int yywrap()
-{
+int yywrap() {
 	return 1;
 }
 
