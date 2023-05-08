@@ -8,7 +8,7 @@ letter [a-z A-Z_]
 
 %%
 {letter}({letter}|{digit})* {i++;}
-{digit}({letter}|{digit})* {;}
+{digit}({letter}|{digit})* 	{;}
 %%
 
 int main()

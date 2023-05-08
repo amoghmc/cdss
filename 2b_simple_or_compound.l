@@ -4,8 +4,8 @@
 %}
 
 %%
-[a-zA-Z]*[ ](and|but|or|however)[ ][a-zA-Z]* {compound = 1;}
-.|[\n] {;}
+[a-zA-Z]*[ ](and|but|or|however)[ ][a-zA-Z]* 	{compound = 1;}
+.|[\n] 											{;}
 %%
 
 int main() {

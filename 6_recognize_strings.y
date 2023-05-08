@@ -7,8 +7,8 @@
 
 %%
 str: s '\n' {printf("Valid string\n"); return 0;}
-s: A s B {;}
-| {;}
+s: A s B    {;}
+|           {;}
 %%
 
 int main() {

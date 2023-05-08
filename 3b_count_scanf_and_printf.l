@@ -4,8 +4,8 @@
 %}
 
 %%
-"scanf" {sf++; fprintf(yyout, "readf");}
-"printf" {pf++; fprintf(yyout, "writef");}
+"scanf"     {sf++; fprintf(yyout, "readf");}
+"printf"    {pf++; fprintf(yyout, "writef");}
 %%
 
 int main() {
@@ -16,7 +16,6 @@ int main() {
     printf("Number of scanf: %d\nNumber of printf: %d\n", sf, pf);
     fclose(yyin);
     fclose(yyout);
-    return 0;
 }
 
 int yywrap() {
