@@ -6,9 +6,9 @@
 
 %%
 var:  L E {printf("Valid variable\n"); return 0;} 
-E: E L  ;
-| E D   ;
-|       ;
+E: E L  {;}
+| E D   {;}
+|       {;}
 %%
 
 int main() {

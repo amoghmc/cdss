@@ -6,8 +6,8 @@
 
 %%
 str: s '\n' {return 0;}
-s: A s B;
-| ;
+s: A s B {;}
+| {;}
 %%
 
 int main() {
