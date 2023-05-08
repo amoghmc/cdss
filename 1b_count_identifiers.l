@@ -3,8 +3,8 @@
 	int i = 0;
 %}
 
-digit [0-9]
-letter [a-z A-Z_]
+digit 	[0-9]
+letter 	[a-z A-Z_]
 
 %%
 {letter}({letter}|{digit})* {i++;}

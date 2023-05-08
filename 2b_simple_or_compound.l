@@ -5,7 +5,8 @@
 
 %%
 [a-zA-Z]*[ ](and|but|or|however)[ ][a-zA-Z]* 	{compound = 1;}
-.|[\n] 											{;}
+.												{;}
+\n												{;}
 %%
 
 int main() {
