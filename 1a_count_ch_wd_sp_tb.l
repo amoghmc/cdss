@@ -16,8 +16,10 @@ int yywrap() {
 
 int main() {
 	yyin = fopen("1a_in.txt", "r");
+
 	yylex(); //starting part of lex program
 	printf("char=%d\t words=%d\t spaces=%d\t lines=%d", ch, wd, sp, ln);
+	fclose(yyin);
 	return 0;
 }
 

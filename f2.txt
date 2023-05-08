@@ -1,0 +1,7 @@
+
+compiler is a program that converts code
+written in one langugage to another
+
+assembler converts symbolic code to machine code
+
+

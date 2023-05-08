@@ -1,6 +1,6 @@
 %{
     #include <stdio.h>
-    #include <stdlib.h>   
+    #include <stdlib.h>
 %}
 
 %token num
@@ -8,10 +8,8 @@
 %left '*''/'
 
 %%
-input:
-exp {printf("%d\n", $$); exit(0);}
-exp:
-exp'+'exp {$$=$1+$3;}
+input: exp {printf("%d\n", $$); exit(0);}
+exp: exp'+'exp {$$=$1+$3;}
 |exp'-'exp {$$=$1-$3;}
 |exp'*'exp {$$=$1*$3;}
 |exp'/'exp {if ($3 == 0) {
@@ -23,13 +21,13 @@ exp'+'exp {$$=$1+$3;}
 |num {$$=$1;};
 %%
 
-int yyerror() {
-    printf("error");
-    exit(1);
-}
-
 int main() {
     printf("Enter an expression:\n");
     yyparse();
+}
+
+int yyerror() {
+    printf("Invalid expression\n");
+    exit(0);
 }
 
