@@ -1,6 +1,6 @@
 %{
     #include <stdio.h>
-    int sf, pf = 0;
+    int sf, pf;
 %}
 
 %%
@@ -10,10 +10,11 @@
 
 int main() {
     yyin = fopen("3b_in.c", "r");
-    yyout = fopen("3d_out.c", "w");
+    yyout = fopen("3b_out.c", "w");
 
     yylex();
-    printf("Number of scanf: %d\nNumber of printf: %d\n", sf, pf);
+    printf("Number of scanf: %d\n", sf);
+    printf("Number of printf: %d\n", pf);
     fclose(yyin);
     fclose(yyout);
 }
