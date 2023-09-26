@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "*.c": "c",
+        "*.html": "html",
+        "climits": "c",
+        "cmath": "c",
+        "cstdarg": "c",
+        "cstdio": "c",
+        "cstdlib": "c",
+        "cwchar": "c",
+        "limits": "c",
+        "new": "c",
+        "*.tcc": "c",
+        "type_traits": "c",
+        "typeinfo": "c"
+    }
+}
